@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="..\static\icon-36x36.png">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Morse code hacker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- STYLES LINKS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="static\styles.css">
+
+
+        <!-- SCRIPT LINKS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+    </head>
+
+
+    <body>
+
+        <div class="top-panel flex-container">
+            <img src="..\static\hacker_mask.png" alt="hacker-img">
+            <h1 class="title-morse">Morse Code Hacker</h1>
+            <img src="..\static\hacker_mask.png" alt="hacker-img">
+        </div>
+            
+    <div class="morse-form flex-container">
+        <form action="/" method="POST">
+            <label  class="main-label" for="morse-code">What do you want to decode?  </label><br>
+            <textarea name="morse-code" id="textarea" cols="50" rows="5"></textarea><br>
+            <input type="radio" id="text" name="textinput" value="text">
+            <label for="text">Text to morse</label><br>
+            <input type="radio" id="morse" name="morseinput" value="morse">
+            <label for="morse">Morse to text</label><br>
+            <button type="submit" name="button" action="#"> Let's Hack! </button>
+        </form>
+
+
+    </div>
+    <div class ="translation-div flex-container">
+        {% if translation != "":%}
+        <h1>{{ translation }}</h1>
+        {%endif%}
+    </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: #301b3f;
+    color: #b4a5a5;
+}
+
+.main-label {
+    font-size: 2rem;
+     
+}
+
+label {
+    margin: auto; 
+}
+
+textarea {
+    padding: 1rem;
+    margin: 2rem;
+}
+button {
+    padding: 5px, 10px;
+    margin: 20px auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-panel {
+    background-color: #151515;
+    padding: 20px 20px 0;
+}
+
+.top-panel h1 {
+    font-size: 4rem;
+    margin: auto 8rem;    
+}
+
+.top-panel img {
+    width: 12rem;
+    margin-bottom: 0
+}
+
+.morse-form {
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.translation-div {
+
+}
